@@ -1,0 +1,40 @@
+.header,.busqueda,.categorias, .items{
+    background-color: gray;
+}
+
+.container{
+    display: grid;
+    width: 90vw;
+    height: 100vh;
+    margin: 10px auto;
+    grid-gap: 10px;
+    grid-template-rows: 100px 80px auto auto;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas: "header header   header"
+                         "categ  busqueda busqueda"
+                         "categ  item     item"
+                         "categ  item     item";
+
+
+}
+
+.header{
+    grid-area: header;
+}
+
+.categorias{
+    grid-area: categ;
+    height: 75vh;
+
+}
+
+.items{
+    grid-area: item;
+    height: 66.1vh;
+    
+
+}
+
+.busqueda{
+    grid-area: busqueda;
+}
